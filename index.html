@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>PHeroTube</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="p-4">
+        <nav>
+            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                <img src="Logo.png" alt="Logo">
+                <button onclick="sortVideos()" id="sortButton" class="btn-dark btn mt-2 pt-0 px-3 fs-5">
+                    Sort by view</button>
+                <button onclick="openBlog()" id="blogButton" class="btn-danger btn mt-2 pt-0 px-3 fs-5">
+                    Blog</button>
+            </div>
+            <hr>
+        </nav>
+        
+        <section id="sortOptions" class="container text-center"></section>
+        
+        <main> <div id="videos" class="row position-relative"></div> </main>
+        
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/5937b585f4.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
